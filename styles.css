@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    max-width: 360px;
+}
+
+.calculator {
+    align-items: center;
+    background-color: #AAA;
+    border-radius: 10px;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    max-width: 360px;
+    padding: 16px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.display {
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.operation {
+    background-color: #F6F6F6;
+    font-size: 20px;
+    min-height: 32px;
+    border: none;
+    text-align: right;
+    width: 100%;
+}
+
+.result {
+    background-color: #F6F6F6;
+    font-size: 40px;
+    min-height: 64px;
+    border: none;
+    text-align: right;
+    width: 100%;
+}
+
+.clear-delete-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 14px;
+    width: 100%;
+}
+
+.clear-delete {
+    background-color: #FAA;
+    border-radius: 5px;
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 49%;
+}
+
+.clear-btn:hover {
+    background-color: #E99;
+}
+
+.clear-btn {
+    background-color: #FAA;
+    transition: background-color .3s;
+}
+
+.delete-btn:hover {
+    background-color: #99E;
+}
+
+.delete-btn {
+    background-color: #AAF;
+    transition: background-color .3s;
+}
+
+.keypad {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+}
+
+.btn-key {
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px;
+    transition: background-color .3s;
+}
+
+.btn-key:hover {
+    background-color: #DDD;
+}
