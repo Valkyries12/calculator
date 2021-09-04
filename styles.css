@@ -37,19 +37,26 @@
 }
 
 .operation {
+    align-items: center;
     background-color: #F6F6F6;
-    font-size: 20px;
-    min-height: 32px;
     border: none;
-    text-align: right;
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-end;
+    min-height: 32px;
+    outline: none;
     width: 100%;
 }
 
 .result {
+    align-items: center;
     background-color: #F6F6F6;
-    font-size: 40px;
-    min-height: 64px;
     border: none;
+    display: flex;
+    font-size: 40px;
+    justify-content: flex-end;
+    min-height: 64px;
+    outline: none;
     text-align: right;
     width: 100%;
 }
